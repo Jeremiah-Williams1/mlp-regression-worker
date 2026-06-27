@@ -1,0 +1,8 @@
+# Extra dependencies for running notebooks/train_model.ipynb locally.
+# Not installed in the worker container -- install with:
+#   pip install -r requirements.txt -r requirements-train.txt
+
+tensorflow>=2.16,<2.17
+pandas>=2.0
+matplotlib>=3.8
+jupyter>=1.0

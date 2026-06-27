@@ -1,0 +1,13 @@
+# Runtime dependencies for the worker container.
+# Training-only deps (pandas, matplotlib, jupyter) live in requirements-train.txt
+# instead -- no reason to ship those into the image that runs in k8s.
+
+tensorflow-cpu>=2.16,<2.17
+numpy>=1.26,<2.0
+redis>=5.0,<6.0
+prometheus_client>=0.20,<0.21
+
+# Shared base.py (Redis/BRPOP loop, status writes, Pushgateway push).
+# Same module every worker repo installs -- replace <you> with your
+# GitHub username/org.
+git+https://github.com/<you>/orchestrator-worker-base.git
