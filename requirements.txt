@@ -10,4 +10,4 @@ prometheus_client>=0.20,<0.21
 # Shared base.py (Redis/BRPOP loop, status writes, Pushgateway push).
 # Same module every worker repo installs -- replace <you> with your
 # GitHub username/org.
-git+https://github.com/<you>/orchestrator-worker-base.git
+git+https://github.com/Jeremiah-Williams1/orchestrator-worker-base.git@v0.1.1

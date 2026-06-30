@@ -3,7 +3,8 @@ from predict import make_prediction
 
 
 def predict_fn(input_data: dict) -> dict:
-    return {"predicted_mpg": make_prediction(input_data)}
+    result = make_prediction(input_data)
+    return {"predicted": result.tolist()}
 
 
 if __name__ == "__main__":

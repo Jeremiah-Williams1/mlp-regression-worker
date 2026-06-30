@@ -16,7 +16,7 @@ import os
 import numpy as np
 import tensorflow as tf
 
-MODEL_PATH = os.getenv("MODEL_PATH", "model/auto_mpg_mlp")
+MODEL_PATH = os.getenv("MODEL_PATH", "model/auto_mpg_mlp.keras")
 FEATURE_COLUMNS_PATH = os.getenv("FEATURE_COLUMNS_PATH", "model/feature_columns.json")
 
 # --- Load once at import time -----------------------------------------
