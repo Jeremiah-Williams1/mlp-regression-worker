@@ -4,7 +4,7 @@ from predict import make_prediction
 
 def predict_fn(input_data: dict) -> dict:
     result = make_prediction(input_data)
-    return {"predicted": result.tolist()}
+    return result
 
 
 if __name__ == "__main__":
